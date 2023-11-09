@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="org.prat4orm.VillanosClass" table="villanos" schema="practica4_orm">
+        <id name="villanoId">
+            <column name="VillanoId" sql-type="int"/>
+        </id>
+        <property name="alias">
+            <column name="Alias" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="ataque">
+            <column name="Ataque" sql-type="float" precision="-1" not-null="true"/>
+        </property>
+        <property name="debilidad">
+            <column name="Debilidad" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="defensa">
+            <column name="Defensa" sql-type="float" precision="-1" not-null="true"/>
+        </property>
+        <property name="nivel">
+            <column name="Nivel" sql-type="int" not-null="true"/>
+        </property>
+        <property name="nombre">
+            <column name="Nombre" sql-type="varchar(255)" not-null="true"/>
+        </property>
+        <property name="vida">
+            <column name="Vida" sql-type="float" precision="-1" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
